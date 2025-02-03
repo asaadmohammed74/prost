@@ -35,7 +35,7 @@ pub fn to_snake(s: impl AsRef<str>) -> String {
 
 /// Converts a `snake_case` identifier to an `UpperCamel` case Rust type identifier.
 pub fn to_upper_camel(s: impl AsRef<str>) -> String {
-    sanitize_identifier(s.as_ref().to_upper_camel_case())
+    sanitize_identifier(s.as_ref())
 }
 
 /// Strip an enum's type name from the prefix of an enum value.
